@@ -1,0 +1,198 @@
+/* This is the CSS file. It styles the HTML page. Each rule starts with a selector (like body or .container) and has properties inside curly braces {}. */
+
+/* Body: Styles the whole page */
+body {
+  font-family: Arial, sans-serif;  /* Simple font, like Arial */
+  background-color: #f4f4f4;  /* Light gray background */
+  color: #333;  /* Dark text color */
+  margin: 0;  /* No space outside */
+  padding: 0;  /* No space inside */
+  line-height: 1.6;  /* Space between lines */
+  scroll-behavior: smooth;  /* Smooth scrolling when clicking navbar links */
+}
+
+/* Navbar: Styles the top menu */
+#navbar {
+  position: fixed;  /* Stays at the top when scrolling */
+  top: 0;  /* At the very top */
+  width: 100%;  /* Full width */
+  background-color: #fff;  /* White background */
+  padding: 10px 0;  /* Space inside */
+}
+
+#navbar ul {
+  list-style: none;  /* No bullets on list */
+  text-align: center;  /* Center the menu */
+  margin: 0;  /* No space outside */
+  padding: 0;  /* No space inside */
+}
+
+#navbar li {
+  display: inline;  /* List items in a row */
+  margin: 0 20px;  /* Space between items */
+}
+
+#navbar a {
+  color: #333;  /* Dark text */
+  text-decoration: none;  /* No underline */
+  font-size: 18px;  /* Bigger text */
+  padding: 10px;  /* Space around text */
+}
+
+#navbar a:hover {
+  color: #007bff;  /* Blue color on hover (mouse over) */
+}
+
+/* Sections: Styles each main part of the page */
+section {
+  padding: 80px 20px 40px;  /* Space inside (top extra for navbar) */
+  min-height: 100vh;  /* Full screen height */
+}
+
+.container {
+  max-width: 1200px;  /* Not too wide */
+  margin: 0 auto;  /* Center it */
+  text-align: center;  /* Center text */
+}
+
+/* Home section: Special styles for your name and photo */
+#home h1 {
+  font-size: 2.5em;  /* Big text */
+  margin-bottom: 20px;  /* Space below */
+  color: #007bff;  /* Blue color */
+}
+
+.profile-photo {
+  width: 200px;  /* Photo width */
+  height: 200px;  /* Photo height */
+  border-radius: 50%;  /* Makes it round */
+  margin: 20px 0;  /* Space around */
+  border: 3px solid #007bff;  /* Blue border */
+}
+
+/* Education section: Styles for the list */
+#education h2 {
+  font-size: 2em;  /* Big text */
+  margin-bottom: 20px;  /* Space below */
+}
+
+#education ul {
+  list-style: none;  /* No bullets */
+  padding: 0;  /* No space inside */
+}
+
+#education li {
+  background-color: #e9ecef;  /* Light background */
+  margin: 10px 0;  /* Space between items */
+  padding: 10px;  /* Space inside */
+  border-radius: 5px;  /* Rounded corners */
+}
+
+/* Contact section: Styles for the form */
+#contact h2 {
+  font-size: 2em;  /* Big text */
+  margin-bottom: 20px;  /* Space below */
+}
+
+form {
+  max-width: 600px;  /* Not too wide */
+  margin: 0 auto;  /* Center it */
+  text-align: left;  /* Left-align form */
+}
+
+label {
+  display: block;  /* Each label on its own line */
+  margin-top: 15px;  /* Space above */
+  font-weight: bold;  /* Bold text */
+}
+
+input, textarea {
+  width: 100%;  /* Full width */
+  padding: 10px;  /* Space inside */
+  margin-top: 5px;  /* Space above */
+  border: 1px solid #ccc;  /* Light border */
+  border-radius: 5px;  /* Rounded corners */
+}
+
+.button-group {
+  margin-top: 20px;  /* Space above */
+  text-align: center;  /* Center buttons */
+}
+
+.btn {
+  padding: 10px 20px;  /* Space inside */
+  background-color: #007bff;  /* Blue background */
+  color: #fff;  /* White text */
+  border: none;  /* No border */
+  border-radius: 5px;  /* Rounded corners */
+  cursor: pointer;  /* Hand cursor on hover */
+  margin: 0 10px;  /* Space between buttons */
+  transition: transform 0.3s;  /* Simple animation: button grows on hover */
+}
+
+.btn:hover {
+  transform: scale(1.05);  /* Makes button 5% bigger on hover (the animation) */
+}
+
+/* Links: Styles for all links */
+.link {
+  color: #007bff;  /* Blue color */
+  text-decoration: none;  /* No underline */
+}
+
+.link:hover {
+  color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Footer: Styles the bottom part */
+footer {
+  background-color: #333;  /* Dark background */
+  color: #fff;  /* White text */
+  padding: 20px 0;  /* Space inside */
+  text-align: center;  /* Center text */
+}
+
+.social-links {
+  margin-top: 10px;  /* Space above */
+}
+
+.social-link {
+  color: #fff;  /* White text */
+  text-decoration: none;  /* No underline */
+  margin: 0 10px;  /* Space between links */
+}
+
+.social-link:hover {
+  color: #007bff;  /* Blue on hover */
+}
+
+/* Mobile: Makes it work on small screens (phones) */
+@media (max-width: 768px) {
+  #navbar ul {
+    text-align: center;  /* Keep centered */
+  }
+  
+  #navbar li {
+    display: block;  /* Stack menu items vertically */
+    margin: 10px 0;  /* Space between */
+  }
+  
+  section {
+    padding: 100px 10px 40px;  /* Adjust space for small screens */
+  }
+  
+  .profile-photo {
+    width: 150px;  /* Smaller photo on mobile */
+    height: 150px;
+  }
+  
+  .button-group {
+    text-align: center;  /* Center buttons */
+  }
+  
+  .btn {
+    display: block;  /* Stack buttons vertically */
+    width: 100%;  /* Full width */
+    margin: 5px 0;  /* Space between */
+  }
+}

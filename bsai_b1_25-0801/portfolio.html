@@ -1,0 +1,88 @@
+<!DOCTYPE html>  <!-- This tells the browser it's an HTML page -->
+<html lang="en">  <!-- Language is English -->
+<head>
+  <meta charset="utf-8" />  <!-- Allows special characters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Makes it work on phones -->
+  <title>My Personal Portfolio - Seerat Abbas</title>  <!-- Page title in browser tab -->
+  <link rel="stylesheet" href="st.css">  <!-- Links to our CSS file for styling -->
+</head>
+<body>  <!-- The main content starts here -->
+
+  <!-- Navigation Bar at the top -->
+  <header>  <!-- Header holds the navbar -->
+    <nav id="navbar">  <!-- Navbar with an ID for CSS -->
+      <ul>  <!-- Unordered list for menu items -->
+        <li><a href="#home">Home</a></li>  <!-- Link to Home section -->
+        <li><a href="#education">Education</a></li>  <!-- Link to Education section -->
+        <li><a href="#contact">Contact</a></li>  <!-- Link to Contact section -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home / About Me Section -->
+  <section id="home">  <!-- Section with ID for navbar links -->
+    <div class="container">  <!-- Container class for CSS styling -->
+      <h1>SEERAT ABBAS</h1>  <!-- Your name as a big heading -->
+      <img src="Screenshot 2024-11-06 110355.png" alt="My Photo" class="profile-photo">  <!-- Your photo -->
+      <p>  <!-- Paragraph for introduction -->
+        Hello! My name is <strong>SEERAT ABBAS</strong>. I am a <em>passionate</em> student of <u>Computer Science</u>. I enjoy learning web technologies and building small projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education / Skills Section -->
+  <section id="education">  <!-- Section with ID for navbar links -->
+    <div class="container">  <!-- Container class for CSS styling -->
+      <h2>Education & Skills</h2>  <!-- Heading for this section -->
+      <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>  <!-- Your degree -->
+      <p><strong>University:</strong> <a href="https://www.fast.edu.pk" target="_blank" rel="noopener noreferrer" class="link">FAST University</a></p>  <!-- University with link -->
+      <h3>Key Skills & Favorite Subjects</h3>  <!-- Sub-heading -->
+      <ul>  <!-- Unordered list for skills -->
+        <li>Data Structures</li>
+        <li>Web Development</li>
+        <li>Database Systems</li>
+        <li>Reading tech articles</li>
+        <li>Playing badminton</li>
+        <li>Photography</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">  <!-- Section with ID for navbar links -->
+    <div class="container">  <!-- Container class for CSS styling -->
+      <h2>Contact Me</h2>  <!-- Heading for this section -->
+      <form action="#" method="post">  <!-- Simple form (no real sending) -->
+        <label for="name">Name:</label>  <!-- Label for name input -->
+        <input type="text" id="name" name="name" placeholder="Your name" required>  <!-- Text input for name -->
+        
+        <label for="email">Email:</label>  <!-- Label for email input -->
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>  <!-- Email input -->
+        
+        <label for="message">Message:</label>  <!-- Label for message -->
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>  <!-- Big text box for message -->
+        
+        <div class="button-group">  <!-- Group for buttons -->
+          <button type="submit" class="btn">Submit</button>  <!-- Submit button -->
+          <button type="reset" class="btn">Reset</button>  <!-- Reset button -->
+        </div>
+      </form>
+      <p class="email-link">Or email me directly: <a href="mailto:your-email@example.com" class="link">your-email@example.com</a></p>  <!-- Direct email link -->
+    </div>
+  </section>
+
+  <!-- Footer at the bottom -->
+  <footer>  <!-- Footer section -->
+    <div class="container">  <!-- Container class for CSS styling -->
+      <p>&copy; 2023 SEERAT ABBAS. All rights reserved.</p>  <!-- Copyright -->
+      <p>Email: <a href="mailto:your-email@example.com" class="link">your-email@example.com</a></p>  <!-- Email -->
+      <div class="social-links">  <!-- Social media links -->
+        <a href="#" class="social-link">LinkedIn</a>  <!-- Placeholder link -->
+        <a href="#" class="social-link">GitHub</a>  <!-- Placeholder link -->
+        <a href="#" class="social-link">Twitter</a>  <!-- Placeholder link -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
