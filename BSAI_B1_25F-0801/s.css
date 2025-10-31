@@ -1,0 +1,151 @@
+/* Whole page style */
+body {
+    font-family: Arial, sans-serif;  /* Simple font */
+    background: linear-gradient(to bottom, #333, #555);  /* Dark gradient background */
+    color: #fff;  /* White text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;  /* Space between lines */
+}
+
+/* Navbar at top */
+#navbar {
+    position: fixed;  /* Stays at top */
+    top: 0;
+    width: 100%;
+    background-color: #222;  /* Dark background */
+    padding: 10px;
+    text-align: center;  /* Center links */
+    border-bottom: 2px solid #4CAF50;  /* Green border */
+}
+
+#navbar a {
+    color: #fff;  /* White text */
+    text-decoration: none;  /* No underline */
+    margin: 0 15px;  /* Space between links */
+    padding: 5px;
+}
+
+#navbar a:hover {
+    color: #4CAF50;  /* Green on hover */
+}
+
+/* All sections */
+section {
+    padding: 80px 20px 40px;  /* Space inside, top for navbar */
+    min-height: 100vh;  /* Full screen height */
+    border-bottom: 1px solid #444;  /* Light border between sections */
+}
+
+/* Home section */
+#home {
+    text-align: left;  /* Left-align text */
+}
+
+#home h1 {
+    color: #4CAF50;  /* Green title */
+    margin-bottom: 10px;
+}
+
+#home img {
+    width: 150px;  /* Photo size */
+    height: 150px;
+    border-radius: 50%;  /* Round photo */
+    border: 3px solid #4CAF50;  /* Green border */
+    float: right;  /* Photo on right */
+    margin-left: 20px;  /* Space from text */
+}
+
+/* Education section */
+#education {
+    text-align: left;
+}
+
+#education h2 {
+    color: #4CAF50;
+}
+
+#education ul {
+    list-style: none;  /* No bullets */
+    padding: 0;
+}
+
+#education li {
+    background-color: #860c0c;  
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 50px;  
+}
+
+/* Contact section */
+#contact {
+    text-align: left;
+}
+
+#contact h2 {
+    color: #4CAF50;
+}
+
+form label {
+    display: block;  /* Labels on own line */
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;  /* Full width */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;  /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  /* Hand on hover */
+    transition: transform 0.2s;  /* Simple zoom animation */
+}
+
+form button:hover {
+    transform: scale(1.1);  /* Zoom on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #222;  /* Dark background */
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #4CAF50;  /* Green border */
+}
+
+footer a {
+    color: #4CAF50;  /* Green links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #fff;  /* White on hover */
+}
+
+/* Mobile (small screens) */
+@media (max-width: 768px) {
+    #home img {
+        float: none;  /* Stack photo below text */
+        display: block;
+        margin: 10px auto;  /* Center photo */
+    }
+    
+    section {
+        padding: 100px 10px 40px;  /* Adjust space */
+    }
+    
+    #navbar a {
+        display: block;  /* Stack navbar links */
+        margin: 5px 0;
+    }
+}
